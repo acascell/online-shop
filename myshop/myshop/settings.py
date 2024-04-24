@@ -133,3 +133,9 @@ MEDIA_ROOT = BASE_DIR / "media"
 CART_SESSION_ID = "cart"
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+# Stripe settings
+
+STRIPE_PUBLISHABLE_KEY = "<KEY>"
+STRIPE_SECRET_KEY = "<KEY>"
+STRIPE_API_VERSION = "2022-08-01"
