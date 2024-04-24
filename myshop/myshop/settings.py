@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "shop.apps.ShopConfig",
     "cart.apps.CartConfig",
     "orders.apps.OrdersConfig",
+    "payment.apps.PaymentConfig",
 ]
 
 MIDDLEWARE = [
@@ -136,6 +137,6 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 # Stripe settings
 
-STRIPE_PUBLISHABLE_KEY = "<KEY>"
-STRIPE_SECRET_KEY = "<KEY>"
+STRIPE_PUBLISHABLE_KEY = "pk_test_51P92sLIKpxY4H2PRigVENYOgUQXqoRdfbrBLK7TGHQI5rOCrFDNXSJhLn8gl19g7P46aYeyI5WsBCxQaJ44bqPDd00EEy79C86"
+STRIPE_SECRET_KEY = "sk_test_51P92sLIKpxY4H2PR6mTtP9t1YxtMuN8tpDljsPqvM6i8pxfK1BbZmBSPqWv2jIs9ZZqktRbSDy57QWfTZaiIvkzs00ghUewgTj"
 STRIPE_API_VERSION = "2022-08-01"
