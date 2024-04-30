@@ -18,6 +18,31 @@ go through the checkout process, pay with credit crt and obtain an invoice.
 ![model.png](myshop%2Fshop%2Fstatic%2Fscreenshots%2Fmodel.png)
 
 ### ✨ Features
+- Front-end defined using simple html/css with fine-grained design including navbar/sub-bar, header, sidebar, 
+product detail, order info, form payment
+- Built product catalog (Drinks shop: tea,coffee,ginseng) based on predefined models product and category.
+- Catalogue view defined using function based views and django template rendering offering a clear and concise 
+catalogue space
+- Built shopping cart allowing user to store and buy products including actions/methods such: "add" "remove"
+"save" "get total price" "clear". 
+- Utilised django session framework as middleware to store cart data
+
+## Urls router endpoint
+
+    - "admin/"
+    - "cart/"
+        "add/<int:product_id>/"
+        "remove/<int:product_id>/"
+    - "orders/"
+        "create/"
+        "admin/order/<int:order_id>/"
+    - "payment/"
+        "process/"
+        "completed/"
+        "canceled/"
+        "webhook/"
+    - "coupons/"
+        "apply/"
 
 
 ### 🚀 Technology Stack
@@ -36,3 +61,4 @@ go through the checkout process, pay with credit crt and obtain an invoice.
 ### 🔎 TODO
 - Add internationalization LN_EN
 - export pdf
+- replace django session with memcache to store user session data
