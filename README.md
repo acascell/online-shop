@@ -23,9 +23,14 @@ product detail, order info, form payment
 - Built product catalog (Drinks shop: tea,coffee,ginseng) based on predefined models product and category.
 - Catalogue view defined using function based views and django template rendering offering a clear and concise 
 catalogue space
-- Built shopping cart allowing user to store and buy products including actions/methods such: "add" "remove"
-"save" "get total price" "clear". 
-- Utilised django session framework as middleware to store cart data
+- Built shopping cart allowing users to store and buy products including actions/methods such: "add" "remove"
+"save" "get total price" "clear". Utilised django session framework as middleware to store cart data
+- Registered application to the admin interface to easily allow users for simple interaction with the model flow
+- Defined asynch tasks using celery and rabbitmq to process and store orders
+- Implemented stripe payment gateway to process payment data using credit card. Defined webhook to actually successfully flag models payment flag
+when the payment correctly completes
+- Defined coupon system to actually apply discounts to the products and have them discounted at the order level toward the stripe payment process
+- Defined recommendation engine using redis based on purchased products
 
 ## Urls router endpoint
 
