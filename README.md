@@ -1,5 +1,5 @@
 # online-shop
-On-line web-shop using Django Celery RabbitMQ
+On-line web-shop using Django Celery RabbitMQ Reddis Docker
 
 ### 🚀 Overview
 The online shop enables client to browse products, add them to the cart, apply discounts,
